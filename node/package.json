@@ -1,0 +1,10 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Julian König",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
