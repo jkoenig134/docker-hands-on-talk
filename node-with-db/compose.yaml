@@ -1,0 +1,29 @@
+services:
+  server:
+    build:
+      context: .
+    environment:
+      NODE_ENV: production
+      MONGODB_URL: mongodb://root:example@db:27017/
+    ports:
+      - 4000:4000
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mongo
+    restart: unless-stopped # no, on-failure:5, always, unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mongo_data:
