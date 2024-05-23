@@ -10,3 +10,7 @@
 ![Docker](https://i.redd.it/2b6rzlv1xxra1.png)
 
 </details>
+
+<iframe width="1280" height="960" src="https://www.youtube.com/embed/wW9CAH9nSLs" title="The future of Linux Containers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/8fi7uSYlOdc" title="Containers From Scratch • Liz Rice • GOTO 2018" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
